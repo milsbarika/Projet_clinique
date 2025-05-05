@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1036</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1041</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    
+QWidget {
+background-color:rgb(95,90, 205);
+}
+
+QLineEdit{
+    background-color: #1e1e1e;
+    selection-background-color: #D1DBCB;
+    selection-color: black;
+    padding: 0px;
+    border-style: solid;
+    border: 1px solid #fb5;
+    border-radius: 2px;
+    color: #000;
+}
+
+QGroupBox {
+    border:1px solid #0f0;
+    border-radius: 1px;
+    margin-top: 6px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top centert;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 4px;
+}
+
+QAbstractScrollArea
+{
+    border-radius: 0px;
+    border: 0px solid #76797C;
+    background-color: transparent;
+}
+
+QScrollBar:horizontal
+{
+    height: 15px;
+    margin: 3px 15px 3px 15px;
+    border: 1px transparent #2A2929;
+    border-radius: 4px;
+    background-color: #2A2929;
+}
+
+QScrollBar::handle:horizontal
+{
+    background-color: #605F5F;
+    min-width: 5px;
+    border-radius: 4px;
+}
+
+QScrollBar::add-line:horizontal
+{
+    margin: 0px 3px 0px 3px;
+    border-image: url(:/qss_icons/rc/right_arrow_disabled.png);
+    width: 10px;
+    height: 10px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal
+{
+    margin: 0px 3px 0px 3px;
+    height: 10px;
+    width: 10px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal:hover,QScrollBar::add-line:horizontal:on
+{
+
+    height: 10px;
+    width: 10px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+
+QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:on
+{
+
+    height: 10px;
+    width: 10px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+    background: none;
+}
+
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+    background: none;
+}
+
+QScrollBar:vertical
+{
+    background-color: #2A2929;
+    width: 15px;
+    margin: 15px 3px 15px 3px;
+    border: 1px transparent #2A2929;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical
+{
+    background-color: #605F5F;
+    min-height: 5px;
+    border-radius: 4px;
+}
+
+QScrollBar::sub-line:vertical
+{
+    margin: 3px 0px 3px 0px;
+    height: 10px;
+    width: 10px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical
+{
+    margin: 3px 0px 3px 0px;
+    height: 10px;
+    width: 10px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:vertical:on
+{
+
+    height: 10px;
+    width: 10px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+
+QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on
+{
+    height: 10px;
+    width: 10px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
+{
+    background: none;
+}
+
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+{
+    background: none;
+}
+
+QTextEdit
+{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #76797C;
+}
+
+QPlainTextEdit
+{
+    background-color: #1e1e1e;;
+    color: #eff0f1;
+    border-radius: 2px;
+    border: 1px solid #76797C;
+}
+
+
+
+/*QMainWindow::separator
+{
+    background-color: #323232;
+    color: white;
+    padding-left: 4px;
+    spacing: 2px;
+    border: 1px dashed #76797C;
+}
+
+QMainWindow::separator:hover
+{
+
+    background-color: #787876;
+    color: white;
+    padding-left: 4px;
+    border: 1px solid #76797C;
+    spacing: 2px;
+}*/
+
+
+QFrame
+{
+    border-radius: 0px;
+    /*border: 1px solid #76797C;*/
+}
+
+
+QFrame[frameShape=&quot;0&quot;]
+{
+    border-radius: 0px;
+    border: 0px transparent #76797C;
+}
+
+QStackedWidget
+{
+    border: 1px transparent black;
+}
+
+/*
+QPushButton
+{
+    color: #eff0f1;
+    background-color: #fff;
+    border-width: 1px;
+    border-color: #76797C;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 0px;
+    outline: none;
+}
+
+QPushButton:disabled
+{
+    background-color: #323232;
+    border-width: 1px;
+    border-color: #454545;
+    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    color: #454545;
+}
+QPushButton:checked{
+    background-color: #76797C;
+    border-color: #6A6969;
+}
+
+
+QPushButton:focus {
+    background-color: #D1DBCB;
+    color: black;
+}
+
+QPushButton:pressed
+{
+    color: black;
+    background-color: #D1DBCB;
+    padding-top: -15px;
+    padding-bottom: -17px;
+}*/
+
+/*QPushButton::menu-indicator  {
+    subcontrol-origin: padding;
+    subcontrol-position: bottom right;
+    left: 8px;
+}*/
+
+
+
+QLabel
+{
+    border: 0px solid black;
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #D1DBCB;
+}
+
+
+QListView::item:!selected:hover, QTreeView::item:!selected:hover  {
+    background: #848383;
+    outline: 0;
+    color: #eff0f1;
+}
+
+QListView::item:selected:hover, QTreeView::item:selected:hover  {
+    background: #D1DBCB;
+}
+
+
+
+
+
+
+/*QHeaderView
+{
+    background-color: #fff;
+    border: 1px transparent;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+QHeaderView::section  {
+    background-color: #fff;
+    color: #000;
+    padding: 5px;
+    border: 0px solid #76797C;
+    border-radius: 0px;
+    text-align: center;
+}
+
+QHeaderView::section::vertical::first, QHeaderView::section::vertical::only-one
+{
+    border-top: 0px solid #76797C;
+}
+
+QHeaderView::section::vertical
+{
+    border-top: transparent;
+}
+
+QHeaderView::section::horizontal::first, QHeaderView::section::horizontal::only-one
+{
+    border-left: 1px solid #76797C;
+}
+
+QHeaderView::section::horizontal
+{
+    border-left: transparent;
+}
+
+
+QHeaderView::section:checked
+ {
+    color: white;
+    background-color: #848383;
+ }*/
+
+
+QTableCornerButton::section {
+    background-color: #323232;
+    border: 0px transparent #76797C;
+    border-radius: 0px;
+}
+
+QTableView
+{
+    font-size: 12px;
+    alternate-background-color: #EEEEFF;
+    border: 1px solid #0f0;
+    gridline-color: #323232;
+    background-color: #fff;
+}
+QTableView::item:!selected:hover {
+    background: #848383;
+    outline: 0;
+    color: #eff0f1;
+}
+
+QTableView, QHeaderView
+{
+    border-radius: 0px;
+}
+
+QTableView::item:pressed, QListView::item:pressed, QTreeView::item:pressed  {
+    background: #D1DBCB;
+    color: black;
+}
+
+QTableView::item:selected:active, QTreeView::item:selected:active, QListView::item:selected:active  {
+    background: #D1DBCB;
+    color: black;
+}
+
+
+/*QHeaderView::section
+{
+    background-color: #76797C;
+    color: #eff0f1;
+    padding: 5px;
+    border: 1px solid #76797C;
+} */
+
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="lineNo">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>540</y>
+       <width>0</width>
+       <height>0</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 85, 0);</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>231</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(95,90, 205);</string>
+     </property>
+     <property name="title">
+      <string>    data client              بيانات الزبون</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>191</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 190, 20);
+font: 75 14pt &quot;Times New Roman&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>المهنة-profession</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_save">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>PT Simple Bold Ruled</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(155, 178, 255, 255), stop:0.75 rgba(205,250, 61, 255), stop:0.98 rgba(100, 155, 170, 255), stop:1 rgba(5, 90, 80, 0));
+background-repeat: none;
+padding-left: 0px;
+margin-left: 0px;
+margin-right: 0px;
+background-position: center;</string>
+      </property>
+      <property name="text">
+       <string>حفظ بيانات زبون جديد</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>191</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 190, 20);
+font: 75 14pt &quot;Times New Roman&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>اللقب -lastName</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>191</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 190, 20);
+font: 75 14pt &quot;Times New Roman&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>date-التاريخ</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_update">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>310</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>PT Simple Bold Ruled</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(155, 178, 255, 255), stop:0.75 rgba(205,250, 61, 255), stop:0.98 rgba(100, 155, 170, 255), stop:1 rgba(5, 90, 80, 0));
+background-repeat: none;
+padding-left: 0px;
+margin-left: 0px;
+margin-right: 0px;
+background-position: center;
+</string>
+      </property>
+      <property name="text">
+       <string>   تحديث بيانات الزبون</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>190</y>
+        <width>191</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 190, 20);
+font: 75 14pt &quot;Times New Roman&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>adress-العنوان</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 190, 20);
+font: 75 14pt &quot;Times New Roman&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>الهاتف-phone</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 190, 20);
+font: 75 14pt &quot;Times New Roman&quot;;
+color: rgb(0, 0, 0);
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>fistName -الاسم</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>9</y>
+       <width>231</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>PT Simple Bold Ruled</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;PT Simple Bold Ruled&quot;;
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../Images_Dossiers/vétérinaire-icon-30429124.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>480</y>
+       <width>231</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(95,90, 205);</string>
+     </property>
+     <property name="title">
+      <string> search client        بحث عن زبون</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_rech">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>191</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 190, 20);
+font: 75 12pt &quot;Times New Roman&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_search">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>PT Simple Bold Ruled</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(155, 178, 255, 255), stop:0.75 rgba(205,250, 61, 255), stop:0.98 rgba(100, 155, 170, 255), stop:1 rgba(5, 90, 80, 0));
+background-repeat: none;
+padding-left: 0px;
+margin-left: 0px;
+margin-right: 0px;
+background-position: center;</string>
+      </property>
+      <property name="text">
+       <string>بحث عن زبون</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_ShowPatients">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>PT Simple Bold Ruled</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(155, 178, 255, 255), stop:0.75 rgba(205,250, 61, 255), stop:0.98 rgba(100, 155, 170, 255), stop:1 rgba(5, 90, 80, 0));
+background-repeat: none;
+padding-left: 0px;
+margin-left: 0px;
+margin-right: 0px;
+background-position: center;</string>
+      </property>
+      <property name="text">
+       <string>اظهار كل الزبائن</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>310</y>
+       <width>781</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item row="1" column="1" rowspan="3">
+       <widget class="QTableWidget" name="tableVisites">
+        <property name="maximumSize">
+         <size>
+          <width>664</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>false</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <property name="gridStyle">
+         <enum>Qt::DashDotDotLine</enum>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>NoOrdre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>id_p_c</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>تاريح الزيارة</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>ملاحظات</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="btn_delete_visite">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>109</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>PT Simple Bold Ruled</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 0, 0);
+background-color: rgb(255, 0, 255);
+/*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(155, 178, 255, 255), stop:0.75 rgba(205,250, 61, 255), stop:0.98 rgba(100, 155, 170, 255), stop:1 rgba(5, 90, 80, 0));*/
+background-repeat: none;
+padding-left: 0px;
+margin-left: 0px;
+margin-right: 0px;
+background-position: center;</string>
+        </property>
+        <property name="text">
+         <string>حذف احدى الزيارات
+del one Visit</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>50</y>
+       <width>781</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <item row="0" column="1" rowspan="6">
+       <widget class="QTableWidget" name="tableClient">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>12</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;
+</string>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="gridStyle">
+         <enum>Qt::SolidLine</enum>
+        </property>
+        <column>
+         <property name="text">
+          <string>id</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>FName</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>LName</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Date </string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Professian</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Adress</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Phone</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="btn_delete">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>PT Simple Bold Ruled</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 0, 0);
+/*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(155, 178, 255, 255), stop:0.75 rgba(205,250, 61, 255), stop:0.98 rgba(100, 155, 170, 255), stop:1 rgba(5, 90, 80, 0));*/
+background-repeat: none;
+padding-left: 0px;
+margin-left: 0px;
+margin-right: 0px;
+background-position: center;</string>
+        </property>
+        <property name="text">
+         <string>حذف زبون
+del client</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="btn_fill">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>PT Simple Bold Ruled</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 0);
+/*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(155, 178, 255, 255), stop:0.75 rgba(205,250, 61, 255), stop:0.98 rgba(100, 155, 170, 255), stop:1 rgba(5, 90, 80, 0));*/
+background-repeat: none;
+padding-left: 0px;
+margin-left: 0px;
+margin-right: 0px;
+background-position: center;
+
+/*
+QPushButton:disabled
+{
+    background-color: #323232;
+    border-width: 1px;
+    border-color: #454545;
+    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    color: #454545;
+}
+QPushButton:checked{
+    background-color: #76797C;
+    border-color: #6A6969;
+}
+
+
+QPushButton:focus {
+    background-color: #D1DBCB;
+    color: black;
+}
+
+*/</string>
+        </property>
+        <property name="text">
+         <string>ملء صناديق النصوص
+fill textBox</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="closeButton">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>10</y>
+       <width>50</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>PT Bold Heading</family>
+       <pointsize>20</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton{
+	padding: 0px;
+border:0px;	 
+	
+	background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 235, 148, 64), stop:0.721925 rgba(255, 238, 150, 129), stop:0.77 rgba(255, 128, 128, 204), stop:0.89 rgba(191, 128, 255, 64), stop:1 rgba(0, 0, 0, 0));
+	
+	color: rgb(255, 0, 0);
+	
+	font: 20pt &quot;PT Bold Heading&quot;;
+}
+QPushButton:hover{
+   color: rgb(0, 0, 255);
+		background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 0, 148, 64), stop:0.721925 rgba(255, 0, 150, 129), stop:0.77 rgba(255, 0, 128, 204), stop:0.89 rgba(191, 0, 0, 64), stop:1 rgba(0, 0, 0, 0));
+	border:0px;	 
+	
+}
+QPushButton:pressed {
+	color: rgb(0, 255, 0);
+	border-bottom: 2px solid rgb(255, 165, 24);
+border:0px;	 
+}</string>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>10</y>
+       <width>666</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>666</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>عيادة الوفاء للجراحة العامة         Clinique El WAFA Chirurgie général </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>470</y>
+       <width>781</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEditEnregist">
+        <property name="maximumSize">
+         <size>
+          <width>664</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" rowspan="3">
+       <widget class="QTextEdit" name="textEdit">
+        <property name="maximumSize">
+         <size>
+          <width>664</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 12pt &quot;Times New Roman&quot;;
+border:1px solid rgb(0,255,0
+);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="btn_save_Observ">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Simple Bold Jut Out</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Simple Bold Jut Out&quot;;
+background-color: rgb(85, 255, 0);
+/*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(155, 178, 255, 255), stop:0.75 rgba(205,250, 61, 255), stop:0.98 rgba(100, 155, 170, 255), stop:1 rgba(5, 90, 80, 0));*/
+background-repeat: none;
+padding-left: 0px;
+margin-left: 0px;
+margin-right: 0px;
+background-position: center;</string>
+        </property>
+        <property name="text">
+         <string>حفظ الملاحظة
+save observation</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="minimizeButton">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>9</y>
+       <width>50</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>PT Bold Heading</family>
+       <pointsize>50</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton{
+border:0px;
+	padding-top: -10px;
+	 
+	background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 235, 148, 64), stop:0.721925 rgba(255, 238, 150, 129), stop:0.77 rgba(255, 128, 128, 204), stop:0.89 rgba(191, 128, 255, 64), stop:1 rgba(0, 0, 0, 0));
+	
+	color: rgb(255, 255, 255);
+	
+	font: 50pt &quot;PT Bold Heading&quot;;
+}
+QPushButton:hover{
+   color: rgb(0, 0, 255);
+			background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 0, 148, 64), stop:0.721925 rgba(255, 0, 150, 129), stop:0.77 rgba(255, 0, 128, 204), stop:0.89 rgba(191, 0, 0, 64), stop:1 rgba(0, 0, 0, 0));
+	border:0px;	 
+	
+	
+}
+QPushButton:pressed {
+	color: rgb(0, 255, 0);
+	border-bottom: 2px solid rgb(255, 165, 24);
+}</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
